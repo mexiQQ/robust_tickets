@@ -1,0 +1,4 @@
+/hdd1/jianwei/workspace/robust_ticket/save_models/draw-retrain_ticket/draw-retrain-ticket__bert-base-uncased_glue-sst2_lr2e-05_sparsity0.3_epochs13/epoch11,91.28440366972477,20.871559633027523,77.13567839195979
+/hdd1/jianwei/workspace/robust_ticket/save_models/draw-retrain_ticket/draw-retrain-ticket__bert-base-uncased_glue-sst2_lr2e-05_sparsity0.3_epochs13/epoch11,91.28440366972477,20.756880733944953,77.26130653266331
+/hdd1/jianwei/workspace/robust_ticket/save_models/draw-retrain_ticket/draw-retrain-ticket__bert-base-uncased_glue-sst2_lr2e-05_sparsity0.3_epochs13/epoch11,72.13302752293578,2.6376146788990824,96.34340222575516
+/hdd1/jianwei/workspace/SparseOptimizer/prune+kd/sst2/research/adt/13-5,90.0229357798165,3.669724770642202,95.92356687898089

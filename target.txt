@@ -1,0 +1,3 @@
+1. Improve the Adversarial Accuracy
+2. Increase the model sparsity
+3. Stability

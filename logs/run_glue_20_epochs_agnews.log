@@ -1,0 +1,70 @@
+Making checkpoint directory: save_models/fine-tune/finetune_bert-base-uncased_ag_news_lr2e-05_epochs20_seed42
+Downloading and preparing dataset ag_news/default (download: 29.88 MiB, generated: 30.23 MiB, post-processed: Unknown size, total: 60.10 MiB) to /home/jianwei/.cache/huggingface/datasets/ag_news/default/0.0.0/fb5c5e74a110037311ef5e904583ce9f8b9fbc1354290f97b4929f01b3f48b1a...
+Dataset ag_news downloaded and prepared to /home/jianwei/.cache/huggingface/datasets/ag_news/default/0.0.0/fb5c5e74a110037311ef5e904583ce9f8b9fbc1354290f97b4929f01b3f48b1a. Subsequent calls will reuse this data.
+Epoch: 0, Loss:  0.4392, Lr:  1.000e-05, Dev_Accuracy: 0.9338333333333333
+**** Test Accuracy: 0.9331578947368421, Test_Loss: 0.20157339498244153
+Epoch: 1, Loss:  0.1728, Lr:  2.000e-05, Dev_Accuracy: 0.9405833333333333
+**** Test Accuracy: 0.9405263157894737, Test_Loss: 0.17401996333965977
+Epoch: 2, Loss:  0.1269, Lr:  1.889e-05, Dev_Accuracy: 0.9418333333333333
+**** Test Accuracy: 0.9427631578947369, Test_Loss: 0.1760520062745869
+Epoch: 3, Loss:  0.0857, Lr:  1.778e-05, Dev_Accuracy: 0.94575
+**** Test Accuracy: 0.9430263157894737, Test_Loss: 0.18709622559180678
+Epoch: 4, Loss:  0.0562, Lr:  1.667e-05, Dev_Accuracy: 0.9420833333333334
+Epoch: 5, Loss:  0.0367, Lr:  1.556e-05, Dev_Accuracy: 0.9429166666666666
+Epoch: 6, Loss:  0.0258, Lr:  1.444e-05, Dev_Accuracy: 0.94125
+Epoch: 7, Loss:  0.0189, Lr:  1.333e-05, Dev_Accuracy: 0.9425833333333333
+Epoch: 8, Loss:  0.0145, Lr:  1.222e-05, Dev_Accuracy: 0.9435833333333333
+Epoch: 9, Loss:  0.0114, Lr:  1.111e-05, Dev_Accuracy: 0.9440833333333334
+Epoch: 10, Loss:  0.0085, Lr:  1.000e-05, Dev_Accuracy: 0.94375
+Epoch: 11, Loss:  0.0066, Lr:  8.889e-06, Dev_Accuracy: 0.9458333333333333
+**** Test Accuracy: 0.9414473684210526, Test_Loss: 0.33535356835951646
+Epoch: 12, Loss:  0.0056, Lr:  7.778e-06, Dev_Accuracy: 0.94475
+Epoch: 13, Loss:  0.0045, Lr:  6.667e-06, Dev_Accuracy: 0.9430833333333334
+Epoch: 14, Loss:  0.0030, Lr:  5.556e-06, Dev_Accuracy: 0.9451666666666667
+Epoch: 15, Loss:  0.0025, Lr:  4.444e-06, Dev_Accuracy: 0.9443333333333334
+Epoch: 16, Loss:  0.0018, Lr:  3.333e-06, Dev_Accuracy: 0.944
+Epoch: 17, Loss:  0.0013, Lr:  2.222e-06, Dev_Accuracy: 0.94475
+Epoch: 18, Loss:  0.0010, Lr:  1.111e-06, Dev_Accuracy: 0.9450833333333334
+Epoch: 19, Loss:  0.0006, Lr:  0.000e+00, Dev_Accuracy: 0.9453333333333334
+**** Best dev metric: 0.9458333333333333 in Epoch: 11
+**** Best Test metric: 0.9414473684210526 in Epoch: 11
+Last epoch test_accuracy: 0.9452631578947368, test_loss: 0.4212230829506772
+Attack(
+  (search_method): GreedyWordSwapWIR(
+    (wir_method):  delete
+  )
+  (goal_function):  UntargetedClassification
+  (transformation):  WordSwapEmbedding(
+    (max_candidates):  50
+    (embedding):  WordEmbedding
+  )
+  (constraints): 
+    (0): WordEmbeddingDistance(
+        (embedding):  WordEmbedding
+        (min_cos_sim):  0.5
+        (cased):  False
+        (include_unknown_words):  True
+        (compare_against_original):  True
+      )
+    (1): PartOfSpeech(
+        (tagger_type):  nltk
+        (tagset):  universal
+        (allow_verb_noun_swap):  True
+        (compare_against_original):  True
+      )
+    (2): UniversalSentenceEncoder(
+        (metric):  angular
+        (threshold):  0.840845057
+        (window_size):  15
+        (skip_text_shorter_than_window):  True
+        (compare_against_original):  False
+      )
+    (3): RepeatModification
+    (4): StopwordModification
+    (5): InputColumnModification(
+        (matching_column_labels):  ['premise', 'hypothesis']
+        (columns_to_ignore):  {'premise'}
+      )
+  (is_black_box):  True
+) 
+

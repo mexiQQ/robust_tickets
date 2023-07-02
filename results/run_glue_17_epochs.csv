@@ -1,0 +1,17 @@
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch0,90.94036697247707,6.192660550458716,93.19041614123581
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch1,92.20183486238533,5.045871559633028,94.5273631840796
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch2,92.31651376146789,4.128440366972477,95.52795031055899
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch3,92.08715596330275,4.587155963302752,95.01867995018681
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch4,92.66055045871559,7.912844036697248,91.46039603960396
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch5,92.77522935779817,3.096330275229358,96.66254635352286
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch6,92.43119266055047,6.077981651376147,93.42431761786601
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch7,91.97247706422019,6.422018348623853,93.01745635910225
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch8,91.97247706422019,7.339449541284404,92.01995012468826
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch9,92.31651376146789,8.944954128440367,90.31055900621118
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch10,92.20183486238533,6.077981651376147,93.40796019900498
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch11,92.20183486238533,7.339449541284404,92.03980099502488
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch12,91.97247706422019,6.192660550458716,93.26683291770574
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch13,92.08715596330275,5.848623853211009,93.64881693648817
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch14,92.08715596330275,9.059633027522937,90.16189290161893
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch15,92.20183486238533,7.798165137614679,91.54228855721392
+save_models/fine-tune/finetune_bert-base-uncased_glue-sst2_lr2e-05_epochs17_seed42/epoch16,92.08715596330275,7.798165137614679,91.53175591531756

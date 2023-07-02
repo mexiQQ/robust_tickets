@@ -1,0 +1,67 @@
+Epoch: 0, Loss:  0.4459, Lr:  1.000e-05, Dev_Accuracy: 0.9348333333333333
+**** Test Accuracy: 0.9325, Test_Loss: 0.20124424434024363
+Epoch: 1, Loss:  0.1733, Lr:  2.000e-05, Dev_Accuracy: 0.942
+**** Test Accuracy: 0.9403947368421053, Test_Loss: 0.17494441768420585
+Epoch: 2, Loss:  0.1266, Lr:  1.889e-05, Dev_Accuracy: 0.9443333333333334
+**** Test Accuracy: 0.945, Test_Loss: 0.1664238803503455
+Epoch: 3, Loss:  0.0844, Lr:  1.778e-05, Dev_Accuracy: 0.9430833333333334
+Epoch: 4, Loss:  0.0567, Lr:  1.667e-05, Dev_Accuracy: 0.9425
+Epoch: 5, Loss:  0.0359, Lr:  1.556e-05, Dev_Accuracy: 0.9430833333333334
+Epoch: 6, Loss:  0.0250, Lr:  1.444e-05, Dev_Accuracy: 0.9438333333333333
+Epoch: 7, Loss:  0.0189, Lr:  1.333e-05, Dev_Accuracy: 0.9420833333333334
+Epoch: 8, Loss:  0.0148, Lr:  1.222e-05, Dev_Accuracy: 0.944
+Epoch: 9, Loss:  0.0113, Lr:  1.111e-05, Dev_Accuracy: 0.9440833333333334
+Epoch: 10, Loss:  0.0086, Lr:  1.000e-05, Dev_Accuracy: 0.9455
+**** Test Accuracy: 0.9403947368421053, Test_Loss: 0.325004310706413
+Epoch: 11, Loss:  0.0070, Lr:  8.889e-06, Dev_Accuracy: 0.9451666666666667
+Epoch: 12, Loss:  0.0054, Lr:  7.778e-06, Dev_Accuracy: 0.94525
+Epoch: 13, Loss:  0.0042, Lr:  6.667e-06, Dev_Accuracy: 0.9461666666666667
+**** Test Accuracy: 0.9425, Test_Loss: 0.3691793237350884
+Epoch: 14, Loss:  0.0037, Lr:  5.556e-06, Dev_Accuracy: 0.946
+Epoch: 15, Loss:  0.0028, Lr:  4.444e-06, Dev_Accuracy: 0.9446666666666667
+Epoch: 16, Loss:  0.0019, Lr:  3.333e-06, Dev_Accuracy: 0.9453333333333334
+Epoch: 17, Loss:  0.0015, Lr:  2.222e-06, Dev_Accuracy: 0.9453333333333334
+Epoch: 18, Loss:  0.0010, Lr:  1.111e-06, Dev_Accuracy: 0.945
+Epoch: 19, Loss:  0.0007, Lr:  0.000e+00, Dev_Accuracy: 0.9461666666666667
+**** Best dev metric: 0.9461666666666667 in Epoch: 13
+**** Best Test metric: 0.9425 in Epoch: 13
+Last epoch test_accuracy: 0.9425, test_loss: 0.43025747071743037
+Attack(
+  (search_method): GreedyWordSwapWIR(
+    (wir_method):  delete
+  )
+  (goal_function):  UntargetedClassification
+  (transformation):  WordSwapEmbedding(
+    (max_candidates):  50
+    (embedding):  WordEmbedding
+  )
+  (constraints): 
+    (0): WordEmbeddingDistance(
+        (embedding):  WordEmbedding
+        (min_cos_sim):  0.5
+        (cased):  False
+        (include_unknown_words):  True
+        (compare_against_original):  True
+      )
+    (1): PartOfSpeech(
+        (tagger_type):  nltk
+        (tagset):  universal
+        (allow_verb_noun_swap):  True
+        (compare_against_original):  True
+      )
+    (2): UniversalSentenceEncoder(
+        (metric):  angular
+        (threshold):  0.840845057
+        (window_size):  15
+        (skip_text_shorter_than_window):  True
+        (compare_against_original):  False
+      )
+    (3): RepeatModification
+    (4): StopwordModification
+    (5): InputColumnModification(
+        (matching_column_labels):  ['premise', 'hypothesis']
+        (columns_to_ignore):  {'premise'}
+      )
+  (is_black_box):  True
+) 
+
